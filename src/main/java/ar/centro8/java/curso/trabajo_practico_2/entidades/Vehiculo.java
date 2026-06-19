@@ -15,7 +15,7 @@ public abstract class Vehiculo implements Comparable<Vehiculo> {
     @Setter
     private Double precio;
     
-    
+    // Locale es un codigo deprecado, no se presentan proyectois con codigos deprecado
     public String formatearPrecio() {
         // Formatea comn el formato de Argentina usa punto para los miles y coma para los decimales
         final NumberFormat formato = NumberFormat.getNumberInstance(new Locale("es", "AR")); 
